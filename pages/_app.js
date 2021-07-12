@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import GlobalStyles from '../styles/globalStyles'
 
 export default function App({ Component, pageProps }) {
   return <>
@@ -8,7 +9,7 @@ export default function App({ Component, pageProps }) {
         name="description"
         content=""
       />
-      <meta property="og:title" content="『神神化身』公式サイト" />
+      <meta property="og:title" content="" />
       <meta property="og:image" content="https://yui540.graphics/ogp.jpg" />
       <meta property="og:url" content="https://yui540.graphics" />
       <meta
@@ -45,6 +46,7 @@ export default function App({ Component, pageProps }) {
       />
       <title></title>
     </Head>
+    <GlobalStyles />
     <Component {...pageProps} />
   </>
 }
