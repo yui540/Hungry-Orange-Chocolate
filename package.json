@@ -1,14 +1,13 @@
 {
-  "name": "Hungry-Orange-Chocolate",
+  "name": "hungry_orange_chocolate",
   "version": "0.0.0",
-  "main": "index.js",
   "repository": "git@github.com:yui540/Hungry-Orange-Chocolate.git",
   "author": "yui540 <tabletennis540@gmail.com>",
   "license": "MIT",
   "scripts": {
     "precommit": "lint-staged",
     "fmt": "prettier --write \"**/*.{ts,tsx,json,md}\"",
-    "watch": "next",
+    "dev": "next",
     "build": "next build && next export"
   },
   "husky": {
