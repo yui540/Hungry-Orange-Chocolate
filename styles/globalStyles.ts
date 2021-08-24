@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   :root {
     --color-white: #fff;
     --color-black: #333;
@@ -16,18 +16,19 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: 'Helvetica Neue', arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-family: tbchibirgothicplusk-pro, 'Helvetica Neue', arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-kerning: normal;
     font-kerning: normal;
-    color: #333;
+    color: var(--color-black);
     background: var(--color-cream);
   }
 
   a {
     text-decoration: none;
+    color: currentColor;
   }
 
   img {
